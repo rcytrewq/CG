@@ -121,15 +121,15 @@ function buildInterface()
   {
     this.joint1x = 0;
     this.joint1y = 0;
-    this.joint1z = 120;
+    this.joint1z = 0;
 
     this.joint2x = 0;
     this.joint2y = 0;
-    this.joint2z = 120;
+    this.joint2z = 0;
 
     this.joint3x = 0;
     this.joint3y = 0;
-    this.joint3z = 120;
+    this.joint3z = 0;
     
 
     this.rotate = function(){
