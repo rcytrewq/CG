@@ -18,7 +18,7 @@ var light  = initDefaultLighting(scene, new THREE.Vector3(7, 7, 7));
 var trackballControls = new TrackballControls( camera, renderer.domElement );
 
 // Set angles of rotation
-var angle1 = [0,0, 0]; // In degreesToRadians
+var angle1 = [0,0, -90]; // In degreesToRadians
 var angle2 = [0,0, 0]; // In degreesToRadians
 var angle3 = [0,0, 0]; // In degreesToRadians
 
@@ -121,7 +121,7 @@ function buildInterface()
   {
     this.joint1x = 0;
     this.joint1y = 0;
-    this.joint1z = 0;
+    this.joint1z = -90;
 
     this.joint2x = 0;
     this.joint2y = 0;
