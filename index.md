@@ -4,9 +4,11 @@ On this page my work will be presented throughout the Computer Graphics course a
 
 The basic projects that support the course can be obtained at [this link](https://rodrigoluis.github.io/CG/)
 
-## Class 01
+## Class 01 - Introduction to three.js
 
-### Exercise 01
+### Exercise 01 
+
+Create three cubes of different sizes in different positions on the base plane
 
 
 * [solution](https://rcytrewq.github.io/CG/works/aula01_ex01.html)
@@ -15,6 +17,7 @@ The basic projects that support the course can be obtained at [this link](https:
 
 ### Exercise 02
 
+Create a cube, a sphere and a cylinder on the base plane
 
 * [solution](https://rcytrewq.github.io/CG/works/aula01_ex02.html)
 
@@ -22,15 +25,17 @@ The basic projects that support the course can be obtained at [this link](https:
 
 ### Exercise 03
 
+Create nine cubes on the base plane using a loop
 
 * [solution](https://rcytrewq.github.io/CG/works/aula01_ex03.html)
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula01_ex03.js)
 
-### Class 02
+## Class 02 - Geometric Transformation
 
 ### Exercise 01
 
+Add a segment to the developed virtual arm [in this code](https://github.com/rcytrewq/CG/blob/main/src/geometricTransformation2.js) and a slider that controls it
 
 * [solution](https://rcytrewq.github.io/CG/works/aula02_ex01.html)
 
@@ -38,6 +43,7 @@ The basic projects that support the course can be obtained at [this link](https:
 
 ### Exercise 02
 
+Enable the rotation of the base of each segment on the three axes
 
 * [solution](https://rcytrewq.github.io/CG/works/aula02_ex02.html)
 
