@@ -11,21 +11,21 @@ The basic projects that support the course can be obtained at [this link](https:
 
 * [solution](https://rcytrewq.github.io/CG/works/aula01_ex01.html)
 
-* [src](https://github/rcytrewq/CG/blob/main/works/aula01_ex01.js)
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula01_ex01.js)
 
 ### Exercise 02
 
 
 * [solution](https://rcytrewq.github.io/CG/works/aula01_ex02.html)
 
-* [src](https://github/rcytrewq/CG/blob/main/works/aula01_ex02.js)
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula01_ex02.js)
 
 ### Exercise 03
 
 
 * [solution](https://rcytrewq.github.io/CG/works/aula01_ex03.html)
 
-* [src](https://github/rcytrewq/CG/blob/main/works/aula01_ex03.js)
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula01_ex03.js)
 
 ### Class 02
 
@@ -34,14 +34,14 @@ The basic projects that support the course can be obtained at [this link](https:
 
 * [solution](https://rcytrewq.github.io/CG/works/aula02_ex01.html)
 
-* [src](https://github/rcytrewq/CG/blob/main/works/aula02_ex01.js)
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula02_ex01.js)
 
 ### Exercise 02
 
 
 * [solution](https://rcytrewq.github.io/CG/works/aula02_ex02.html)
 
-* [src](https://github/rcytrewq/CG/blob/main/works/aula02_ex02.js)
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula02_ex02.js)
 
 ---
 ##### Author
