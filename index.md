@@ -37,7 +37,7 @@ Create nine cubes on the base plane using a loop
 
 Add a segment to the developed virtual arm [in this code](https://github.com/rcytrewq/CG/blob/main/src/geometricTransformation2.js) and a slider that controls it
 
-* [solution](https://rcytrewq.github.io/CG/works/aula02_ex01.html)
+* [solution](https://rcytrewq.github.io/CG/works/aula02_ex1.html)
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula02_ex01.js)
 
