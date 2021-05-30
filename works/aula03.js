@@ -16,7 +16,6 @@ var renderer = initRenderer();    // View function in util/utils
 
 showInformation();
 
-
 //var light = initDefaultLighting(scene, new THREE.Vector3(5.0, 5.0, 5.0)); // Use default light    
 
 // Show world axes
@@ -39,8 +38,8 @@ var trackballControls = new TrackballControls(camera, renderer.domElement );
 window.addEventListener( 'resize', function(){onWindowResize(camera, renderer)}, false );
 
 //yellow
-const geometry = new THREE.PlaneGeometry( 100, 100,100,100);
-geometry.translate(0.0, 0.0, 0.0);
+const geometry = new THREE.PlaneGeometry( 100, 250,100,100);
+geometry.translate(0.0, 75.0, 0.0);
 geometry.rotateX(1.5708); // To avoid conflict with the 
 const material = new THREE.MeshBasicMaterial( {color: 0xffff00,  wireframe:true} );
 const plane = new THREE.Mesh( geometry, material );
@@ -48,31 +47,31 @@ scene.add( plane );
 
 //red
 const geometry2 = new THREE.PlaneGeometry( 100, 100,100,100);
-geometry2.translate(0.0, 50.0, 50.0);
+geometry2.translate(0.0, 50.0, 200.0);
 //geometry.rotateX(1.5708); // To avoid conflict with the 
 const material2 = new THREE.MeshBasicMaterial( {color: 'rgb(255,0,0)',  wireframe:true} );
 const plane2 = new THREE.Mesh( geometry2, material2 );
 scene.add( plane2 );
 
 //blue
-const geometry3 = new THREE.PlaneGeometry( 100, 100,100,100);
-geometry3.translate(0.0, 50.0, 50.0);
+const geometry3 = new THREE.PlaneGeometry( 250, 100,100,100);
+geometry3.translate(-75.0, 50.0, 50.0);
 geometry3.rotateY(1.5708); // To avoid conflict with the 
 const material3 = new THREE.MeshBasicMaterial( {color: 'rgb(0,0,255)',  wireframe:true} );
 const plane3 = new THREE.Mesh( geometry3, material3 );
 scene.add( plane3 );
 
 //green
-const geometry4 = new THREE.PlaneGeometry( 100, 100,100,100);
-geometry4.translate(0.0, 50.0, -50.0);
+const geometry4 = new THREE.PlaneGeometry( 250, 100,100,100);
+geometry4.translate(-75.0, 50.0, -50.0);
 geometry4.rotateY(1.5708); // To avoid conflict with the 
 const material4 = new THREE.MeshBasicMaterial( {color: 'rgb(0,255,0)',  wireframe:true} );
 const plane4 = new THREE.Mesh( geometry4, material4 );
 scene.add( plane4 );
 
 //white
-const geometry5 = new THREE.PlaneGeometry( 100, 100,100,100);
-geometry5.translate(0.0, 0.0, -100.0);
+const geometry5 = new THREE.PlaneGeometry( 100, 250,100,100);
+geometry5.translate(0.0, 75.0, -100.0);
 geometry5.rotateX(1.5708); // To avoid conflict with the 
 const material5 = new THREE.MeshBasicMaterial( {color: 'rgb(255,255,255)',  wireframe:true} );
 const plane5 = new THREE.Mesh( geometry5, material5 );
@@ -163,7 +162,7 @@ function keyboardUpdate() {
     var rotAxis3 = new THREE.Vector3(0,0,1); // Set Z axis
   
     
-    if ( keyboard.pressed("space") ) virtualCamera.translateZ( -1 );
+    if ( keyboard.pressed("space") ) virtualCamera.translateZ( -0.5 );
   
     if ( keyboard.pressed("down") )  virtualCamera.rotateOnAxis(rotAxis1,  angle );
     if ( keyboard.pressed("up") )  virtualCamera.rotateOnAxis(rotAxis1, -angle );
