@@ -6,12 +6,16 @@ import KeyboardState from '../libs/util/KeyboardState.js';
 import {initRenderer, 
         initDefaultLighting,
         createGroundPlane,
+        InfoBox,
         onWindowResize, 
         degreesToRadians} from "../libs/util/util.js";
 
 var scene = new THREE.Scene();    // Create main scene
 scene.background = new THREE.Color('rgb(20,20,20)');
 var renderer = initRenderer();    // View function in util/utils
+
+showInformation();
+
 
 //var light = initDefaultLighting(scene, new THREE.Vector3(5.0, 5.0, 5.0)); // Use default light    
 
@@ -83,12 +87,13 @@ scene.add( plane5 );
 // Setting virtual camera
 //-------------------------------------------------------------------------------
 var lookAtVec = new THREE.Vector3( 0.0, 50.0, 0.0 );
-var upVec = new THREE.Vector3( 0.0, 0.0, 1.0 );
+var upVec = new THREE.Vector3( 0.0, 1.0, 0.0 );
 var vcWidth = 400; // virtual camera width
 var vcHeidth = 300; // virtual camera height
 var virtualCamera = new THREE.PerspectiveCamera(45, vcWidth/vcHeidth, 1.0, 250.0);
   virtualCamera.lookAt(lookAtVec);
   virtualCamera.position.set(0,50,-250);
+  
   virtualCamera.up = upVec;
 
 // Create helper for the virtual camera
@@ -155,7 +160,7 @@ function keyboardUpdate() {
     var angle = degreesToRadians(0.5);
     var rotAxis1 = new THREE.Vector3(1,0,0); // Set X axis
     var rotAxis2 = new THREE.Vector3(0,1,0); // Set Y axis
-    var rotAxis3 = new THREE.Vector3(0,0,3); // Set Z axis
+    var rotAxis3 = new THREE.Vector3(0,0,1); // Set Z axis
   
     
     if ( keyboard.pressed("space") ) virtualCamera.translateZ( -1 );
@@ -166,12 +171,24 @@ function keyboardUpdate() {
     if ( keyboard.pressed("left") )  virtualCamera.rotateOnAxis(rotAxis2,  angle );
     if ( keyboard.pressed("right") )  virtualCamera.rotateOnAxis(rotAxis2, -angle );
 
-    if ( keyboard.pressed(",") )  virtualCamera.rotateOnAxis(rotAxis3,  angle );
-    if ( keyboard.pressed(".") )  virtualCamera.rotateOnAxis(rotAxis3, -angle );
+    if ( keyboard.pressed(".") )  virtualCamera.rotateOnAxis(rotAxis3,  angle );
+    if ( keyboard.pressed(",") )  virtualCamera.rotateOnAxis(rotAxis3, -angle );
   
     
   }
 
+  function showInformation()
+{
+  // Use this to show information onscreen
+  var controls = new InfoBox();
+    controls.add("Commands:");
+    controls.addParagraph();
+    controls.add("←  → : Y rotation");
+    controls.add("↓  ↑ : X rotation");
+    controls.add("<  > : Z rotation");
+    controls.add("space : Z translation");
+    controls.show();
+}
 
 function controlledRender()
 {

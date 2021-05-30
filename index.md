@@ -49,6 +49,18 @@ Enable the rotation of the base of each segment on the three axes
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula02_ex02.js)
 
+
+## Class 03 - Projections and Virtual Cameras
+
+### Exercise 01
+
+Develop an environment that allows the navigation through manipulation of the camera position
+
+* [solution](https://rcytrewq.github.io/CG/works/aula03.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula03.js)
+
+
 ---
 ##### Author
 Yuri Ramos Corrêa
