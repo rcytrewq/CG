@@ -64,11 +64,15 @@ Develop an environment that allows the navigation through manipulation of the ca
 
 ### Exercise 01
 
+Add two yellow cylinders rotating in opposite directions to the [animation.js file](https://github.com/rcytrewq/CG/blob/main/src/animation.js).
+
 * [solution](https://rcytrewq.github.io/CG/works/aula04_ex01.html)
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula04_ex01.js)
 
 ### Exercise 02
+
+Create a scene that contains a sphere of radius 1 and a 25x25 plane. Create sliders to determine the sphere's position in the plane and the "move" button that when clicked starts the sphere displacement animation
 
 * [solution](https://rcytrewq.github.io/CG/works/aula04_ex02.html)
 
