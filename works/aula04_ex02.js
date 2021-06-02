@@ -13,7 +13,7 @@ var stats = new Stats();          // To show FPS information
 var scene = new THREE.Scene();    // Create main scene
 var renderer = initRenderer();    // View function in util/utils
 
-var camera = initCamera(new THREE.Vector3(30, 30, 10)); // Init camera in this position
+var camera = initCamera(new THREE.Vector3(30, 30, 30)); // Init camera in this position
 camera.up.set(0, 0, 1);
 camera.lookAt(0.0, 0.0, 0.0);
 var light  = initDefaultLighting(scene, new THREE.Vector3(0, 0, 15));
@@ -27,17 +27,17 @@ var animationOn = false; // control if animation is on or of
 
 var posx=11;
 var posy=0;
-var posz = 11;
+var posy = 11;
 
 
 // Show world axes
-var axesHelper = new THREE.AxesHelper( 12 );
+var axesHelper = new THREE.AxesHelper( 15 );
 scene.add( axesHelper );
 
-//yellow
+//plan
 const geometry = new THREE.PlaneGeometry( 25, 25,100,100);
-//geometry.translate(0.0, 75.0, 0.0);
-//geometry.rotateX(1.5708); // To avoid conflict with the 
+geometry.translate(0.0, 0.0, -0.05);
+
 const material = new THREE.MeshBasicMaterial({color: 'rgb(0,0,255)', wireframe:true});
 const plane = new THREE.Mesh( geometry, material );
 scene.add(plane);
@@ -61,8 +61,8 @@ function animate()
 {
   if(animationOn)
   {
-    sphere.lookAt(new THREE.Vector3(posx, posz,1));
-    if (Math.abs(sphere.position.x - posx)>speed || Math.abs(sphere.position.y - posz)>speed){
+    sphere.lookAt(new THREE.Vector3(posx, posy,1));
+    if (Math.abs(sphere.position.x - posx)>speed || Math.abs(sphere.position.y - posy)>speed){
       sphere.translateZ(speed);
     }
     else{
@@ -79,14 +79,9 @@ function buildInterface()
       animationOn = !animationOn;
     };
 
-    this.onChangeAnimationRed = function(){
-      animationRedCyl = !animationRedCyl;
-    };
-
     this.speed = 0.05;
     this.posx=0;
-    
-    this.posz = 0;
+    this.posy = 0;
 
     this.changeSpeed = function(){
       speed = this.speed;
@@ -97,13 +92,13 @@ function buildInterface()
     };
 
     this.changeZ = function(){
-      posz = this.posz;
+      posy = this.posy;
     };
 
     this.reset = function(){
       sphere.position.set(0,0,1);
       controls.posx = 0;
-      controls.posz= 0;
+      controls.posy= 0;
     }
   };
 
@@ -119,9 +114,9 @@ function buildInterface()
     .onChange(function(e) { controls.changeX() })
     .name("X position");
 
-  gui.add(controls, 'posz', -12.5, 12.5)
+  gui.add(controls, 'posy', -12.5, 12.5)
     .onChange(function(e) { controls.changeZ() })
-    .name("Z position");
+    .name("Y position");
 
   gui.add(controls, 'reset')
     .onChange(function(e) { controls.reset() })
