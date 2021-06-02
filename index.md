@@ -60,6 +60,20 @@ Develop an environment that allows the navigation through manipulation of the ca
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula03.js)
 
+## Class 04 - Animations
+
+### Exercise 01
+
+* [solution](https://rcytrewq.github.io/CG/works/aula04_ex01.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula04_ex01.js)
+
+### Exercise 02
+
+* [solution](https://rcytrewq.github.io/CG/works/aula04_ex02.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula04_ex02.js)
+
 
 
 ---
