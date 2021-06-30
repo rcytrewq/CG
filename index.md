@@ -79,6 +79,21 @@ Create a scene that contains a sphere of radius 1 and a 25x25 plane. Create slid
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula04_ex02.js)
 
 
+## Class 06 - 3D Object Representation
+
+### Exercise 01
+
+Combine basic geometries to create a wind turbine model
+
+### Exercise 02
+
+Create an "Animation On" button that will start the rotation of the blades.
+Add a slider to change the turbine's spin speed
+
+* [solution](https://rcytrewq.github.io/CG/works/aula06.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula06.js)
+
 
 ---
 ##### Author
