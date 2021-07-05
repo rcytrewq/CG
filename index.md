@@ -94,6 +94,26 @@ Add a slider to change the turbine's spin speed
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula06.js)
 
+## Class 07 - Lighting
+
+### Exercise 01
+
+Combine basic geometries to create a wind turbine model
+
+### Exercise 02
+
+Create a white teapot that will be illuminated by 3 lightspots: a red one, a gren one and a blue one.
+Allow lightspots to move along three horizontal bars.
+Enable keys to command the movement of lightspots.
+Create a teapot rotation animation.
+Create buttons that turn animations and lightspots on/off.
+
+
+
+* [solution](https://rcytrewq.github.io/CG/works/aula07.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula07.js)
+
 
 ---
 ##### Author
