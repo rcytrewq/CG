@@ -98,10 +98,6 @@ Add a slider to change the turbine's spin speed
 
 ### Exercise 01
 
-Combine basic geometries to create a wind turbine model
-
-### Exercise 02
-
 Create a white teapot that will be illuminated by 3 lightspots: a red one, a gren one and a blue one.
 Allow lightspots to move along three horizontal bars.
 Enable keys to command the movement of lightspots.
