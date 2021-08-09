@@ -128,6 +128,9 @@ Create a textured cylinder with different textures for the body and top
 * [solution](https://rcytrewq.github.io/CG/works/aula08_ex02.html)
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula08_ex02.js)
+
+
+
 ---
 ##### Author
 Yuri Ramos Corrêa
