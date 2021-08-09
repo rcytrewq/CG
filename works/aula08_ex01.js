@@ -14,7 +14,7 @@ import {initRenderer,
 
 var scene = new THREE.Scene();    // Create main scene
 var stats = new Stats();          // To show FPS information
-
+scene.background = new THREE.Color('rgb(0,0,0');
 //utilities
 var spGroup; 
 var animationOn = true;
@@ -52,7 +52,7 @@ function createFace(x,y,z){
 
   // Use TextureLoader to load texture files
   var textureLoader = new THREE.TextureLoader();
-  var stone = textureLoader.load('../assets/textures/stone.jpg');
+  var stone = textureLoader.load('../assets/textures/marble128.png');
 
   // Add texture to the 'map' property of the object's material
   face.material.map = stone;
