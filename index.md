@@ -114,7 +114,24 @@ Create buttons that turn animations and lightspots on/off.
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula07.js)
 
+## Class 08 - Textures
 
+### Exercise 01
+
+Create a textured cube. Create the cube with only 5 faces, with textures visible on the front and back 
+
+* [solution](https://rcytrewq.github.io/CG/works/aula08_ex01.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula08_ex01.js)
+
+### Exercise 02
+
+Create a textured cylinder with different textures for the body and top 
+
+
+* [solution](https://rcytrewq.github.io/CG/works/aula08_ex02.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula08_ex02.js)
 ---
 ##### Author
 Yuri Ramos Corrêa
