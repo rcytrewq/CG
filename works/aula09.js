@@ -45,7 +45,7 @@ var phongMaterialBox = new THREE.MeshLambertMaterial( {
 
 
 var phongMaterialWall = new THREE.MeshLambertMaterial( {
-	color: "rgb(100,100,220)",
+	color: "rgb(150,150,220)",
 } );
 
 
