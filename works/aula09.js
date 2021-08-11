@@ -88,7 +88,7 @@ var planeGeometry = new THREE.BoxGeometry( 6.00, 0.05, 3.00 );
 var planeGeometry2 = new THREE.BoxGeometry( 3.00, 0.05, 3.00 );
 var cylinderGeometry = new THREE.CylinderGeometry (0.5,0.5, 1.0, 80);
 var knotGeometry = new THREE.TorusKnotGeometry (1, 0.3, 64, 64);
-var specialCylinderGeometry = new THREE.CylinderGeometry (0.45,0.25, 0.8, 80);
+var specialCylinderGeometry = new THREE.CylinderGeometry (0.45,0.15, 0.8, 80);
 
 // Glass Sphere (black-right-front)
 var glass = new THREE.Mesh( sphereGeometry, mirrorMaterial );
