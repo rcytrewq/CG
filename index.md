@@ -129,6 +129,15 @@ Create a textured cylinder with different textures for the body and top
 
 * [src](https://github.com/rcytrewq/CG/blob/main/works/aula08_ex02.js)
 
+## Class 09 - Realism
+
+### Exercise 01
+
+Scenario creation 
+
+* [solution](https://rcytrewq.github.io/CG/works/aula09.html)
+
+* [src](https://github.com/rcytrewq/CG/blob/main/works/aula09.js)
 
 
 ---
